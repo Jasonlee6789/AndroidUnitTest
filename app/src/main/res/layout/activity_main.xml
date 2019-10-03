@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_messageToCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type the message here"
+        android:layout_margin="25dp"/>
+
+
+    <Button
+        android:id="@+id/btn_getMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Get Message"
+        android:background="#3EC2B4"
+        android:onClick="getMessage"
+        android:layout_below="@+id/editText_messageToCopy"/>
+
+    <TextView
+        android:id="@+id/textView_copiedMeaasge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this message will change when you click the button!"
+        android:layout_below="@+id/btn_getMessage"
+        android:layout_margin="25dp"
+        />
+
+</RelativeLayout>
