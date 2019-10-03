@@ -33,4 +33,7 @@ public class MainActivity extends AppCompatActivity {
         tv_copiedMessage.setText(message);
         tv_copiedMessage.setTextColor(Color.RED);
     }
+
+    public void openActivity2(View view) {
+    }
 }
